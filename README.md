@@ -27,7 +27,7 @@ Tenho foco em **agilidade, eficiência** e **entregas profissionais**, mesmo em 
 ---
 
 🌐 Acesse o Portfólio
-🔗 **Site Online:** [https://iteze.github.io](https://iteze7.github.io/iteze/)
+🔗 **Site Online:** [https://iteze.github.io](https://iteze7.github.io/portfolio/)
 
 ---
 

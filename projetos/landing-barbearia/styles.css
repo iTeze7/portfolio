@@ -1,6 +1,5 @@
-/* ===== CSS Variables ===== */
 :root {
-  /* Colors */
+
   --background: 30 20% 8%;
   --foreground: 40 20% 90%;
   --primary: 38 70% 50%;
@@ -14,30 +13,24 @@
   --border: 30 15% 20%;
   --ring: 38 70% 50%;
 
-  /* Custom Colors */
   --rustic: 25 30% 12%;
   --gold: 38 70% 50%;
   --gold-light: 40 60% 65%;
   --cream: 40 30% 92%;
   --brick: 15 40% 25%;
 
-  /* Gradients */
   --gradient-gold: linear-gradient(135deg, hsl(38 70% 50%), hsl(40 60% 65%));
   --gradient-rustic: linear-gradient(180deg, hsl(25 30% 12%), hsl(30 20% 8%));
 
-  /* Shadows */
   --shadow-gold: 0 4px 20px -4px hsla(38, 70%, 50%, 0.3);
   --shadow-elegant: 0 10px 30px -10px hsla(38, 70%, 50%, 0.2);
 
-  /* Fonts */
   --font-playfair: 'Playfair Display', serif;
   --font-outfit: 'Outfit', sans-serif;
 
-  /* Spacing */
   --section-padding: 5rem 1rem;
 }
 
-/* ===== Reset & Base ===== */
 *,
 *::before,
 *::after {
@@ -50,11 +43,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ===== BACKGROUND APLICADO AQUI ===== */
 body {
   font-family: var(--font-outfit);
 
-  /* 🔥 BACKGROUND FIXO EM TODA A PÁGINA */
   background: url("images/hero-bg.jpg") center/cover no-repeat fixed;
 
   color: hsl(var(--foreground));
@@ -83,7 +74,6 @@ ul {
   list-style: none;
 }
 
-/* ===== Container ===== */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -91,7 +81,6 @@ ul {
   padding: 0 1rem;
 }
 
-/* ===== Buttons ===== */
 .btn-gold {
   display: inline-flex;
   align-items: center;
@@ -142,7 +131,6 @@ ul {
   height: 1.25rem;
 }
 
-/* ===== Text Utilities ===== */
 .text-primary {
   color: hsl(var(--primary));
 }
@@ -154,7 +142,6 @@ ul {
   background-clip: text;
 }
 
-/* ===== Header ===== */
 .header {
   position: fixed;
   top: 0;
@@ -249,7 +236,6 @@ ul {
   height: 1.5rem;
 }
 
-/* Mobile Menu */
 .mobile-menu {
   position: absolute;
   top: 100%;
@@ -291,8 +277,6 @@ ul {
   text-align: center;
 }
 
-/* ===== Hero Section ===== */
-/* 🔥 REMOVIDO O BACKGROUND DO HERO PARA NÃO DUPLICAR */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -354,7 +338,6 @@ ul {
   font-size: 1.125rem;
 }
 
-/* ===== Section Styles ===== */
 .section-padding {
   padding: var(--section-padding);
 }
@@ -387,7 +370,6 @@ ul {
   margin: 0 auto;
 }
 
-/* ===== Gallery Section ===== */
 .gallery {
   background: hsl(var(--background) / 0.7);
   backdrop-filter: blur(6px);
@@ -450,7 +432,6 @@ ul {
   margin-top: 2.5rem;
 }
 
-/* ===== Benefits Section ===== */
 .benefits {
   background: hsl(var(--secondary) / 0.5);
 }
@@ -510,7 +491,6 @@ ul {
   line-height: 1.6;
 }
 
-/* ===== Footer ===== */
 .footer {
   background: var(--gradient-rustic);
   padding: 4rem 1rem 2rem;
@@ -612,7 +592,6 @@ ul {
   font-size: 0.875rem;
 }
 
-/* ===== Animations ===== */
 .animate-fade-up {
   animation: fadeUp 0.6s ease-out forwards;
   opacity: 0;
@@ -641,7 +620,6 @@ ul {
   }
 }
 
-/* ===== Media Queries ===== */
 @media (min-width: 640px) {
   .hero-title {
     font-size: 3rem;

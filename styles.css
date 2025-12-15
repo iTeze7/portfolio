@@ -4,7 +4,6 @@ body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Rob
 
 a{color:inherit;text-decoration:none}
 
-/* Space Background */
 .space-bg{
   position:fixed;inset:0;z-index:-2;background: radial-gradient(ellipse at bottom, #0f0716 0%, #03030b 50%, #000 100%);
   overflow:hidden;
@@ -17,32 +16,26 @@ a{color:inherit;text-decoration:none}
   position:absolute;right:-10%;top:-10%;width:70vmin;height:70vmin;background:conic-gradient(from 200deg at 50% 50%, rgba(124,58,237,0.18), rgba(99,102,241,0.12), rgba(13,148,136,0.06));filter:blur(60px);opacity:0.9;z-index:-1;transform:rotate(25deg);
 }
 
-/* Container */
 .container{max-width:1100px;margin:0 auto;padding:48px 20px}
 
-/* Header */
 header{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:14px}
 .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#7c3aed,#4c1d95);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(124,58,237,0.18);overflow:hidden}
 .logo strong{font-family:monospace;color:#fff}
 .avatar-img{width:100%;height:100%;object-fit:cover}
 
-/* Navigation */
 nav{display:flex;gap:14px;align-items:center}
 .btn{padding:10px 14px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);cursor:pointer;color:inherit;font-size:inherit;font-family:inherit}
 .btn.primary{background:linear-gradient(90deg,#6d28d9,#8b5cf6);border:0;color:#fff;box-shadow:0 8px 30px rgba(99,102,241,0.12)}
 .btn:hover{opacity:0.9}
 
-/* Hero */
 .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin:48px 0}
 .hero-left h1{font-size:clamp(28px,4vw,44px);line-height:1.02;background:linear-gradient(90deg,#fff,#c7b8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .subtitle{color:#c8c7d6;margin-top:12px}
 
-/* Badges */
 .badges{display:flex;gap:8px;margin-top:18px}
 .badge{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,0.04);font-size:13px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
 
-/* Card Preview */
 .card-preview{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:18px;border-radius:12px;box-shadow:0 12px 40px rgba(22,6,38,0.5)}
 .mock{height:260px;border-radius:10px;background:linear-gradient(180deg,#0b0b12,#121018);display:flex;flex-direction:column;overflow:hidden}
 .mock .top{padding:12px;display:flex;gap:8px;align-items:center}
@@ -50,21 +43,17 @@ nav{display:flex;gap:14px;align-items:center}
 .screen{flex:1;padding:18px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#bfc0d9}
 .screenshot{width:90%;height:46%;border-radius:8px;background:linear-gradient(90deg, rgba(124,58,237,0.18), rgba(99,102,241,0.12));display:flex;align-items:center;justify-content:center;font-weight:600}
 
-/* Sections */
 section{margin:56px 0}
 
-/* Services Grid */
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .service{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.03)}
 .service h4{margin-bottom:8px}
 
-/* Projects Grid */
 .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .proj{border-radius:12px;padding:14px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));min-height:180px;display:flex;flex-direction:column;justify-content:space-between}
 .proj .tags{display:flex;gap:8px;margin-top:12px}
 .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03)}
 
-/* Icon Buttons */
 .btn-icon{
   width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;
   border:1px solid rgba(139,92,246,0.3);background:rgba(139,92,246,0.1);color:#a78bfa;
@@ -75,14 +64,11 @@ section{margin:56px 0}
 .btn-icon.linkedin:hover{color:#fff;background:rgba(139,92,246,0.25)}
 .btn-icon.whatsapp:hover{color:#25d366;border-color:rgba(37,211,102,0.4);background:rgba(37,211,102,0.1)}
 
-/* Contact Card */
 .contact-card{display:flex;gap:18px;align-items:center;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(124,58,237,0.06), rgba(99,102,241,0.03));border:1px solid rgba(124,58,237,0.08)}
 
-/* Animations */
 .float{animation:float 6s ease-in-out infinite}
 @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
 
-/* Responsive - Tablet */
 @media (max-width:980px){
   .hero{grid-template-columns:1fr;}
   .projects,.grid-3{grid-template-columns:repeat(2,1fr)}
@@ -90,7 +76,6 @@ section{margin:56px 0}
   .card-preview{order:1}
 }
 
-/* Responsive - Mobile */
 @media (max-width:640px){
   .container {
     padding: 28px 16px;
@@ -168,7 +153,6 @@ section{margin:56px 0}
   }
 }
 
-/* Responsive - Small Mobile */
 @media (max-width:380px){
   body {
     font-size: 14px;
@@ -211,7 +195,7 @@ button,
 a button,
 a.btn,
 a.button {
-  background: #6a0dad; /* roxo */
+  background: #6a0dad; 
   color: #fff !important;
   padding: 12px 25px;
   border: none;
@@ -223,7 +207,6 @@ a.button {
   overflow: hidden;
 }
 
-/* Hover */
 button:hover,
 .btn:hover,
 .button:hover {
@@ -231,7 +214,6 @@ button:hover,
   box-shadow: 0 0 15px #a855f7, 0 0 30px #a855f7;
 }
 
-/* Pulse Glow */
 button::after,
 .btn::after,
 .button::after {
